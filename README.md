@@ -1,6 +1,4 @@
-# portfolio
-
-**Nimesh Maharjan**
+**Porftolio - Nimesh Maharjan**
 
 Portfolio website created with React and Tailwindcss. Framer motion is used for the animations and a package called react-wavy-transitions by *FrontendJoe* for the page transitions with react-router-dom.
 
