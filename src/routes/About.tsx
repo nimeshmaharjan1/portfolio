@@ -4,8 +4,8 @@ import { useMenuStore } from '../store/useMenu';
 const Wrapper = () => {
   const toggleMenu = useMenuStore((state) => state.toggleMenu);
   return (
-    <div className="bg-slate-100 about-page min-h-screen flex flex-col items-center justify-center">
-      <div className="section px-5 md:px-24 lg:px-0 py-8 lg:py-12">
+    <div className="bg-slate-100 about-page min-h-screen lg:flex flex-col items-center justify-center">
+      <div className="section px-5 md:px-24 lg:px-0 py-6 lg:py-12">
         <div className="mb-8 relative z-10">
           <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">About Me</h4>
           <MenuIcon
