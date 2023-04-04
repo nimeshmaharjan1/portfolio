@@ -44,8 +44,8 @@ function App() {
           <Route
             path="*"
             element={
-              <div className="min-h-screen flex  items-center justify-center flex-col">
-                <h2 className="text-6xl mb-4 font-semibold text-primary">Under Progress...😘😘 </h2>
+              <div className="min-h-screen flex px-12 container mx-auto items-center justify-center flex-col">
+                <h2 className="text-2xl lg:text-5xl mb-4 font-bold text-primary">Under Progress...😘😘 </h2>
                 <PrimaryButton to="/">Go Back</PrimaryButton>
               </div>
             }
