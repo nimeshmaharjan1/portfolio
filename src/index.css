@@ -6,10 +6,20 @@
   font-family: 'Work Sans', sans-serif;
 }
 
-.home {
+.home-page {
   background-image: url('./assets/hero-bg.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100dvh;
+}
+
+#menu {
+  background: rgb(255, 222, 237);
+  background: linear-gradient(90deg, rgba(255, 222, 237, 1) 0%, rgba(202, 226, 255, 1) 100%);
+}
+
+.about-page {
+  background: rgb(255, 237, 245);
+  background: linear-gradient(90deg, rgba(255, 237, 245, 1) 0%, rgba(215, 233, 255, 1) 100%);
 }

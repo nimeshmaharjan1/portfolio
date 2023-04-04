@@ -1,7 +1,9 @@
 import { Outlet } from 'react-router-dom';
+import { Nav } from './Nav';
 
 export const Main = () => (
-  <main>
+  <>
+    <Nav></Nav>
     <Outlet />
-  </main>
+  </>
 );
