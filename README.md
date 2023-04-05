@@ -4,4 +4,6 @@ Portfolio website created with React and Tailwindcss. Framer motion is used for 
 
 If you would like to use this template just clone the repo and install the dependencies, no vite plugins has been used. The package manager I have used is pnpm as it is slightly faster compared to yarn and npm.
 
+As for the global state management I have used zustand and a package called classnames to handle dynamic utility classes.
+
 It has been deployed to Vercel: [Live URL](https://portfolio-ten-black-27.vercel.app/)
