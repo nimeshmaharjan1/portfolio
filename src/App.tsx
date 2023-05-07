@@ -6,10 +6,11 @@ import Home from './routes/Home';
 import Contact from './routes/Contact';
 
 import { Nav } from './layout/Nav';
-import { Main } from './layout/Main';
+import { Main } from './layout/Layout';
 
 import { WavyContainer } from 'react-wavy-transitions';
 import PrimaryButton from './components/buttons/PrimaryButton';
+import Projects from "./routes/Projects";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
               {/* <Nav /> */}
               <Main />
             </>
-          }>
+          }
+        >
           <Route index element={<Home />} />
           <Route
             path="about"
@@ -42,10 +44,20 @@ function App() {
             }
           />
           <Route
+            path="projects"
+            element={
+              <Suspense fallback={<>...</>}>
+                <Projects />
+              </Suspense>
+            }
+          />
+          <Route
             path="*"
             element={
               <div className="min-h-screen flex px-12 container mx-auto items-center justify-center flex-col">
-                <h2 className="text-2xl lg:text-5xl mb-4 font-bold text-primary">Under Progress...😘😘 </h2>
+                <h2 className="text-2xl lg:text-5xl mb-4 font-bold text-primary">
+                  Under Progress...😘😘{" "}
+                </h2>
                 <PrimaryButton to="/">Go Back</PrimaryButton>
               </div>
             }
