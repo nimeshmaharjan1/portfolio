@@ -11,7 +11,7 @@ const Slot = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isSpinning, setIsSpinning] = useState(false);
   const [cardImages, setCardImages] = useState<ICard[]>([]);
-  const [probability, setProbability] = useState(0.05); // Initially set to true for win image
+  const [probability, setProbability] = useState(0.5); // Initially set to true for win image
   const audioSound = audioFile;
 
   const [previousProbability, setPreviousProbability] = useState(probability);
