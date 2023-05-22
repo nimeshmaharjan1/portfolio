@@ -10,6 +10,7 @@ import { Main } from './layout/Main';
 
 import { WavyContainer } from 'react-wavy-transitions';
 import PrimaryButton from './components/buttons/PrimaryButton';
+import Slot from './routes/Slot';
 
 function App() {
   return (
@@ -21,10 +22,10 @@ function App() {
           element={
             <>
               {/* <Nav /> */}
-              <Main />
+              <Slot />
             </>
           }>
-          <Route index element={<Home />} />
+          {/* <Route index element={<Home />} />
           <Route
             path="about"
             element={
@@ -41,6 +42,15 @@ function App() {
               </Suspense>
             }
           />
+
+          <Route
+            path="slot"
+            element={
+              <Suspense fallback={<>...</>}>
+                <Slot />
+              </Suspense>
+            }
+          /> */}
           <Route
             path="*"
             element={
